@@ -1,2 +1,2 @@
-# obc_ds_note
+# object-c data structure notes
 object-c Data structure notes

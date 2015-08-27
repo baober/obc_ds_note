@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B3F19F01B8F6B05005F71E2 /* SelectSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F19EF1B8F6B05005F71E2 /* SelectSort.m */; };
+		2B3F19F31B8F738E005F71E2 /* MergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F19F21B8F738E005F71E2 /* MergeSort.m */; };
 		2BD804C51B8DA9FB00345AA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD804C41B8DA9FB00345AA1 /* main.m */; };
 		2BD804CD1B8DB05400345AA1 /* BuddleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD804CC1B8DB05400345AA1 /* BuddleSort.m */; };
 		2BD804D01B8DB58100345AA1 /* SortHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD804CF1B8DB58100345AA1 /* SortHelper.m */; };
@@ -26,6 +28,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B3F19EE1B8F6B05005F71E2 /* SelectSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectSort.h; sourceTree = "<group>"; };
+		2B3F19EF1B8F6B05005F71E2 /* SelectSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectSort.m; sourceTree = "<group>"; };
+		2B3F19F11B8F738E005F71E2 /* MergeSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeSort.h; sourceTree = "<group>"; };
+		2B3F19F21B8F738E005F71E2 /* MergeSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MergeSort.m; sourceTree = "<group>"; };
 		2BD804C11B8DA9FB00345AA1 /* testOrder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testOrder; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD804C41B8DA9FB00345AA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2BD804CB1B8DB05400345AA1 /* BuddleSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuddleSort.h; sourceTree = "<group>"; };
@@ -68,13 +74,17 @@
 			isa = PBXGroup;
 			children = (
 				2BD804C41B8DA9FB00345AA1 /* main.m */,
+				2BD804D41B8DEB5500345AA1 /* Sorter.h */,
 				2BD804CE1B8DB58100345AA1 /* SortHelper.h */,
 				2BD804CF1B8DB58100345AA1 /* SortHelper.m */,
 				2BD804CB1B8DB05400345AA1 /* BuddleSort.h */,
 				2BD804CC1B8DB05400345AA1 /* BuddleSort.m */,
-				2BD804D41B8DEB5500345AA1 /* Sorter.h */,
 				2BD804D11B8DE9C000345AA1 /* InsertOrder.h */,
 				2BD804D21B8DE9C000345AA1 /* InsertOrder.m */,
+				2B3F19EE1B8F6B05005F71E2 /* SelectSort.h */,
+				2B3F19EF1B8F6B05005F71E2 /* SelectSort.m */,
+				2B3F19F11B8F738E005F71E2 /* MergeSort.h */,
+				2B3F19F21B8F738E005F71E2 /* MergeSort.m */,
 			);
 			path = testOrder;
 			sourceTree = "<group>";
@@ -135,10 +145,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B3F19F31B8F738E005F71E2 /* MergeSort.m in Sources */,
 				2BD804C51B8DA9FB00345AA1 /* main.m in Sources */,
 				2BD804D31B8DE9C000345AA1 /* InsertOrder.m in Sources */,
 				2BD804D01B8DB58100345AA1 /* SortHelper.m in Sources */,
 				2BD804CD1B8DB05400345AA1 /* BuddleSort.m in Sources */,
+				2B3F19F01B8F6B05005F71E2 /* SelectSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +267,7 @@
 				2BD804CA1B8DA9FB00345AA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

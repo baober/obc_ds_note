@@ -11,6 +11,7 @@
 #import "Sorter.h"
 #import "BuddleSort.h"
 #import "InsertOrder.h"
+#import "SelectSort.h"
 
 /*
  TBD: add source to github
@@ -39,22 +40,23 @@ int main(int argc, const char * argv[]) {
         [SortHelper printArray:[NSMutableArray arrayWithArray:arr]];
         
         //冒泡排序Normal
-        //[BuddleSort buddleSortNormal:[NSMutableArray arrayWithArray:arr]];//34次
-        //[BuddleSort buddleSortBetter:[NSMutableArray arrayWithArray:arr]];//31
-        //[BuddleSort buddleSortBest:[NSMutableArray arrayWithArray:arr]];//25次
+        //[BuddleSort buddleSortNormal:[NSMutableArray arrayWithArray:arr]];//34次, swap 20
+        //[BuddleSort buddleSortBetter:[NSMutableArray arrayWithArray:arr]];//31, swap 20
+        //[BuddleSort buddleSortBest:[NSMutableArray arrayWithArray:arr]];//25次, swap 20
         
         //插入排序
-        //[InsertOrder sort:[NSMutableArray arrayWithArray:arr]];//20次
+        //[InsertOrder sort:[NSMutableArray arrayWithArray:arr]];//20次，swap 20次
         
-	//希尔排序
+        //希尔排序
 
-	//归并排序
+        //归并排序
 
         //选择排序
+        [SelectSort sort:[NSMutableArray arrayWithArray:arr]];//34次, swap 6次
         
         //快速排序
 
-	//堆排序
+        //堆排序
     }
     return 0;
 }

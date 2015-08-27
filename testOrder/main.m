@@ -46,9 +46,15 @@ int main(int argc, const char * argv[]) {
         //插入排序
         //[InsertOrder sort:[NSMutableArray arrayWithArray:arr]];//20次
         
+	//希尔排序
+
+	//归并排序
+
         //选择排序
         
         //快速排序
+
+	//堆排序
     }
     return 0;
 }

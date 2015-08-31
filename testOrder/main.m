@@ -12,6 +12,7 @@
 #import "BuddleSort.h"
 #import "InsertOrder.h"
 #import "SelectSort.h"
+#import "QuickSort.h"
 
 /*
  TBD: add source to github
@@ -52,9 +53,10 @@ int main(int argc, const char * argv[]) {
         //归并排序
 
         //选择排序
-        [SelectSort sort:[NSMutableArray arrayWithArray:arr]];//34次, swap 6次
+        //[SelectSort sort:[NSMutableArray arrayWithArray:arr]];//34次, swap 6次
         
         //快速排序
+        [QuickSort sort:[NSMutableArray arrayWithArray:arr]];
 
         //堆排序
     }

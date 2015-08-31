@@ -13,6 +13,7 @@
 		2BD804CD1B8DB05400345AA1 /* BuddleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD804CC1B8DB05400345AA1 /* BuddleSort.m */; };
 		2BD804D01B8DB58100345AA1 /* SortHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD804CF1B8DB58100345AA1 /* SortHelper.m */; };
 		2BD804D31B8DE9C000345AA1 /* InsertOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD804D21B8DE9C000345AA1 /* InsertOrder.m */; };
+		381377411B94879000F87012 /* QuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 381377401B94879000F87012 /* QuickSort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,8 @@
 		2BD804D11B8DE9C000345AA1 /* InsertOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsertOrder.h; sourceTree = "<group>"; };
 		2BD804D21B8DE9C000345AA1 /* InsertOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsertOrder.m; sourceTree = "<group>"; };
 		2BD804D41B8DEB5500345AA1 /* Sorter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sorter.h; sourceTree = "<group>"; };
+		3813773F1B94879000F87012 /* QuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
+		381377401B94879000F87012 /* QuickSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickSort.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				2B3F19EF1B8F6B05005F71E2 /* SelectSort.m */,
 				2B3F19F11B8F738E005F71E2 /* MergeSort.h */,
 				2B3F19F21B8F738E005F71E2 /* MergeSort.m */,
+				3813773F1B94879000F87012 /* QuickSort.h */,
+				381377401B94879000F87012 /* QuickSort.m */,
 			);
 			path = testOrder;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				381377411B94879000F87012 /* QuickSort.m in Sources */,
 				2B3F19F31B8F738E005F71E2 /* MergeSort.m in Sources */,
 				2BD804C51B8DA9FB00345AA1 /* main.m in Sources */,
 				2BD804D31B8DE9C000345AA1 /* InsertOrder.m in Sources */,

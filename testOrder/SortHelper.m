@@ -16,4 +16,18 @@
     }
     printf("\n");
 }
+
++(void)printArray:(NSMutableArray *)array left:(NSInteger)left right:(NSInteger)right
+{
+    if(left > right || right + 1 > array.count)
+    {
+        return;
+    }
+    
+    for(NSInteger i = left; i < right + 1; i++)
+    {
+        printf(" %s", [[array[i] stringValue]UTF8String]);
+    }
+    printf("\n");
+}
 @end

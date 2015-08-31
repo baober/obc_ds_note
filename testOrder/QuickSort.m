@@ -18,6 +18,7 @@
     }
     
     [self quickSortStep:array left:0 right:[array count] - 1];
+    [SortHelper printArray:array];
     return array;
 }
 
@@ -25,32 +26,35 @@
 {
     if(right > left)
     {
-        //NSInteger i = left;
-        NSInteger i = left + 1;
+        NSInteger i = left;
+        //NSInteger i = left + 1;
         NSInteger j = right + 1;
         while(true)
         {
-            //while(i + 1 < [array count] && [[array objectAtIndex:++i] compare:[array objectAtIndex:left]] == NSOrderedAscending);
-            while(i < [array count] && [array[i] compare:array[left]] == NSOrderedAscending)
+            while(i + 1 < [array count] && [[array objectAtIndex:++i] compare:[array objectAtIndex:left]] == NSOrderedAscending);
+            /*while(i < [array count] && [array[i] compare:array[left]] == NSOrderedAscending)
             {
                 NSLog(@"i = %lo pass", i);
                 i++;
-            }
+            }*/
             while(j > 0 && [array[--j] compare:array[left]] == NSOrderedDescending);
             
             //printf("i=%s, j=%s", [[[NSNumber numberWithLong:i] stringValue]UTF8String], [[[NSNumber numberWithLong:j] stringValue]UTF8String]);
-            NSLog(@"i = %lo, j = %lo", i, j);
+            //NSLog(@"i = %lo, j = %lo", i, j);
             
             if(i >= j){
                 break;
             }
             [array exchangeObjectAtIndex:i withObjectAtIndex:j];
-            printf("while once finish: ");
-            [SortHelper printArray:array];
+            //printf("while once finish: ");
+            //[SortHelper printArray:array];
         }
         [array exchangeObjectAtIndex:left withObjectAtIndex:j];
-        printf("step finish: ");
-        [SortHelper printArray:array];
+        //printf("step finish: ");
+        //NSLog(@"step finish: from %lo to %lo", left, right);
+        //[SortHelper printArray:array left:left right:right];
+        [self quickSortStep:array left:left right:j - 1];
+        [self quickSortStep:array left:j + 1 right:right];
     }
 }
 

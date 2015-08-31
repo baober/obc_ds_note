@@ -11,5 +11,6 @@
 @interface SortHelper : NSObject
 
 +(void)printArray: (NSMutableArray*)array;
++(void)printArray:(NSMutableArray *)array left:(NSInteger)left right:(NSInteger)right;
 
 @end

@@ -56,7 +56,7 @@ int main(int argc, const char * argv[]) {
         //[SelectSort sort:[NSMutableArray arrayWithArray:arr]];//34次, swap 6次
         
         //快速排序
-        [QuickSort sort:[NSMutableArray arrayWithArray:arr]];
+        //[QuickSort sort:[NSMutableArray arrayWithArray:arr]];
 
         //堆排序
     }

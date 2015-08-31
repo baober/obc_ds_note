@@ -11,6 +11,7 @@
 
 /*
  插入排序
+ 节约了交换次数
  */
 @implementation InsertOrder
 
@@ -31,7 +32,7 @@
         //[SortHelper printArray:array];
     }
     
-    NSLog(@"End InsertOrder, and use times: %lo", times);
+    NSLog(@"End InsertOrder, and use times: %lo, swap times: %lo", times, times);
     return array;
 }
 @end

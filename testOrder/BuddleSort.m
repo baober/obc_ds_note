@@ -21,18 +21,20 @@
     
     //NSLog(@"Begin buddleSortNormal: ");
     unsigned long int times = 0;
+    unsigned long int swap_times = 0;
     
     for(int i = 1; i < array.count; i++){
         for(int j = 0; j < array.count - i; j++){
             times++;
             if([array[j] compare:array[j + 1]] == NSOrderedDescending){
                 [array exchangeObjectAtIndex:j withObjectAtIndex:j + 1];
+                swap_times++;
             }
         }
         //[SortHelper printArray:array];
     }
     
-    NSLog(@"End buddleSortNormal, and use times: %lo", times);
+    NSLog(@"End buddleSortNormal, and use times: %lo, swap times: %lo", times, swap_times);
     return array;
 }
 
@@ -46,6 +48,7 @@
     
     //NSLog(@"Begin buddleSortBetter: ");
     unsigned long int times = 0;
+    unsigned long int swap_times = 0;
     
     bool hasChange = true;
     int i = 1;
@@ -57,13 +60,14 @@
             if([array[j] compare:array[j + 1]] == NSOrderedDescending){
                 hasChange = true;
                 [array exchangeObjectAtIndex:j withObjectAtIndex:j + 1];
+                swap_times++;
             }
         }
         //[SortHelper printArray:array];
         i++;
     }
     
-    NSLog(@"End buddleSortBetter, and use times: %lo", times);
+    NSLog(@"End buddleSortBetter, and use times: %lo, swap times: %lo", times, swap_times);
     return array;
 }
 
@@ -80,6 +84,7 @@
     
     int flag = (int)[array count] - 1;
     unsigned long int times = 0;
+    unsigned long int swap_times = 0;
     
     while(flag > 0){
         int originalFlag = flag;
@@ -87,13 +92,14 @@
             times++;
             if([array[j] compare:array[j + 1]] == NSOrderedDescending){
                 [array exchangeObjectAtIndex:j withObjectAtIndex:j + 1];
+                swap_times++;
                 flag = j;
             }
         }
         //[SortHelper printArray:array];
     }
     
-    NSLog(@"End buddleSortBest, and use times: %lo", times);
+    NSLog(@"End buddleSortBest, and use times: %lo, swap times: %lo", times, swap_times);
     
     return array;
 }
